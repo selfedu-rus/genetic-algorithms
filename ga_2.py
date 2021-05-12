@@ -64,7 +64,7 @@ def selTournament(population, p_len):
 
 def cxOnePoint(child1, child2):
     s = random.randint(2, len(child1)-3)
-    child1[:s], child2[s:] = child2[:s], child1[s:]
+    child1[s:], child2[s:] = child2[s:], child1[s:]
 
 def mutFlipBit(mutant, indpb=0.01):
     for indx in range(len(mutant)):
